@@ -56,8 +56,8 @@
 					</excludes>
 				</configuration>
 			</plugin>
-			<!-- Execute JaCoCo report and save it in target/site/jacoco/index.html -->
-			<plugin>
+				<plugin>
+				<!-- Execute JaCoCo report and save it in target/site/jacoco/index.html -->
 				<groupId>org.jacoco</groupId>
 				<artifactId>jacoco-maven-plugin</artifactId>
 				<version>0.8.5</version>
@@ -69,7 +69,7 @@
 					</execution>
 					<execution>
 						<id>jacoco-report</id>
-						<phase>site</phase>
+						<phase>test</phase>
 						<goals>
 							<goal>report</goal>
 						</goals>
